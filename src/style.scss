@@ -1,0 +1,71 @@
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: rgb(30%, 30%, 30%);
+  background: darken(white, 50%);
+  margin: 40px;
+}
+
+#note {
+  position: absolute;
+  resize: both;
+  overflow: auto;
+  border-color: rgb(100,100,100);
+  border-style:solid;
+  border-width: thin;
+  background-color: white;
+  width: 250px;
+  height:250px;
+  padding: 10px;
+
+  #title {
+    width: inherit;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+    #arrows {
+      float: right;
+    }
+
+  #body {
+    display: inline;
+    word-wrap: break-word;
+    overflow: auto;
+    width: inherit;
+  }
+
+
+#controls {
+  display: flex;
+  justify-content: space-between;
+}
+  #note-bar {
+    align-self: flex-start;
+    padding:0px;
+    margin:0px;
+  }
+  #delete-button {
+    align-self:flex-end;
+    padding:0px;
+    margin:0px;
+  }
+
+  input[type=text] {
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    font-size: 1.25em;
+    margin: 10px;
+  }
+
+  input[type=submit] {
+    padding: 10px;
+    font-size: 1.25em;
+    box-sizing: content-box;
+    background-color: yellow;
+    border:none;
+    border-radius: 10px;
+  }
+
+}
